@@ -6,5 +6,12 @@ export default {
   component: Button
 }
 
-export const Primary = () => <Button text="+" onClick={() => {}} />
-export const Danger = () => <Button text="C" style={{ backgroundColor: 'red' }} />
+export const TextoSimple = () => (
+  <Button className='typewriter-key' onClick={() => alert('¡Click!')}>Click aquí</Button>
+)
+
+export const ConClaseExtra = () => (
+  <Button className='typewriter-key' onClick={() => console.log('Botón especial')}>
+    Especial
+  </Button>
+)

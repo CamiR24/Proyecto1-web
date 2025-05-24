@@ -1,0 +1,244 @@
+.typewriter-calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    padding: 20px;
+    font-family: 'Courier New', monospace;
+  }
+
+  .typewriter-body {
+    background: linear-gradient(145deg, #4a4a4a 0%, #2d2d2d 50%, #1a1a1a 100%);
+    border-radius: 20px 20px 10px 10px;
+    padding: 30px;
+    box-shadow: 
+      0 20px 40px rgba(0, 0, 0, 0.6),
+      inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    position: relative;
+    min-width: 450px;
+  }
+
+  .brand-plate {
+    background: linear-gradient(145deg, #a68940, #b8860b);
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .brand-text {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  .model-text {
+    font-size: 10px;
+    opacity: 0.8;
+    margin-top: 2px;
+  }
+
+  .typewriter-display {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .paper {
+    background: #f5f5dc;
+    width: 420px;
+    height: 120px;
+    border-radius: 4px;
+    box-shadow: 
+      0 0 10px rgba(0, 0, 0, 0.3),
+      inset 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .paper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ff6b6b;
+    margin-left: 20px;
+  }
+
+  .paper::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-image: repeating-linear-gradient(
+      transparent,
+      transparent 23px,
+      #e0e0e0 23px,
+      #e0e0e0 24px
+    );
+  }
+
+  .paper-content {
+    padding: 20px 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 1;
+  }
+
+  .calculation-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2c3e50;
+    font-family: 'Courier New', monospace;
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  .cursor {
+    opacity: 0;
+    transition: opacity 0.1s;
+  }
+
+  .cursor.visible {
+    opacity: 1;
+  }
+
+  .keyboard-section {
+    background: linear-gradient(145deg, #3a3a3a, #2a2a2a);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0 3px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .row {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .typewriter-key {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 58px;
+    height: 50px;
+    margin: 1px;
+  }
+
+  .key-top {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(145deg, #f0f0f0, #d0d0d0);
+    border-radius: 6px;
+    box-shadow: 
+      0 3px 6px rgba(0, 0, 0, 0.3),
+      inset 0 1px 2px rgba(255, 255, 255, 0.8);
+    transition: all 0.1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .typewriter-key:hover .key-top {
+    background: linear-gradient(145deg, #e0e0e0, #c0c0c0);
+    box-shadow: 
+      0 2px 4px rgba(0, 0, 0, 0.3),
+      inset 0 1px 2px rgba(255, 255, 255, 0.8);
+  }
+
+  .typewriter-key:active .key-top {
+    transform: translateY(2px);
+    box-shadow: 
+      0 1px 2px rgba(0, 0, 0, 0.3),
+      inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+
+  .key-face {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Courier New', monospace;
+  }
+
+  .special-key .key-top {
+    background: linear-gradient(145deg, #ffd700, #daa520);
+  }
+
+  .special-key:hover .key-top {
+    background: linear-gradient(145deg, #ffed4e, #d4af37);
+  }
+
+  .key-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+  }
+
+  .key-content span {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .clear-key .key-top {
+    background: linear-gradient(145deg, #ff6b6b, #e74c3c);
+    color: white;
+  }
+
+  .clear-key:hover .key-top {
+    background: linear-gradient(145deg, #ff5252, #c0392b);
+  }
+
+  .typewriter-feet {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .foot {
+    width: 30px;
+    height: 15px;
+    background: linear-gradient(145deg, #666, #333);
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  @media (max-width: 480px) {
+    .typewriter-body {
+      min-width: auto;
+      padding: 20px;
+    }
+
+    .paper {
+      width: 280px;
+      height: 100px;
+    }
+
+    .calculation-text {
+      font-size: 24px;
+    }
+
+    .typewriter-key {
+      width: 30px;
+      height: 30px;
+    }
+  }

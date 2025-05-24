@@ -1,7 +1,7 @@
 import React from 'react'
 import Display from './components/Display'
 import { useCalculatorContext } from './context/CalculatorContext'
-import FirstRow from './components/firstRow'
+import FirstRow from './components/FirstRow'
 import SecondRow from './components/SecondRow'
 import ThirdRow from './components/ThridRow'
 import './styles/calculator.css'

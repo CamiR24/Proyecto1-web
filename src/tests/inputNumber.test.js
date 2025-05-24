@@ -5,7 +5,7 @@ describe('inputNumber', () => {
   it('replaces display if waitingForOperand is true', () => {
     let display = '0'
     const setDisplay = (val) => display = val
-    const setWaiting = (val) => {}
+    const setWaiting = () => {}
 
     const input = inputNumber(display, setDisplay, true, setWaiting)
     input(7)

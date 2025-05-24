@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import useTypewriterDisplay from '../hooks/useTypewriterDisplay';
 
 const Display = ({ value }) => {

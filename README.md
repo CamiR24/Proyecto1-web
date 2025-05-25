@@ -1,6 +1,6 @@
 # Calculadora React
 
-Este proyecto es una calculadora desarrollada con React y Vite.
+Este proyecto es una calculadora desarrollada con React y Vite. El concepto creativo de la calculadora es que se ve como si fuera una máquina de escribir.
 
 ## Requisitos
 

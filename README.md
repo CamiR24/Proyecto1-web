@@ -7,26 +7,6 @@ Este proyecto es una calculadora desarrollada con React y Vite.
 - Node.js >= 18
 - npm >= 9
 
-## Estructura del proyecto
-
-├── src/
-│   ├── components/
-│   ├── context/
-│   ├── hooks/
-│   ├── stories/
-│   ├── styles/
-│   ├── tests/
-│   ├── main.jsx
-│   └── App.jsx
-├── .eslintrc.json
-├── .gitignore
-├── .eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── vite.config.js
-└── vitest.workspace.js
-
 ## Imagen
 
 ![calculadora](src/assets/calculadora.png)
